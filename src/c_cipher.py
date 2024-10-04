@@ -20,7 +20,7 @@ def encrypt(email="abc012"):
     #     A = email[:3] (check first half)
     #     B = email[3:] (check second half)
     #     enum_flag = A or B
-    anum_flag = email[:3].isalpha() and email[3:].isdigit() len(email[:3]) == 3 and len(email[3:]) == 3
+    anum_flag = (email[:3].isalpha() and email[3:].isdigit()) and (len(email[:3]) == 3 and len(email[3:]) == 3)
     
     if len_flag:                         # NOTE: here we provide input validation on length
         output = "Length check failed\n"
