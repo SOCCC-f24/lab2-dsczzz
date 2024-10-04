@@ -13,7 +13,8 @@ def encrypt(email="abc012"):
     An error or encrypted email.
     """
     output = "" 
-    if len(email) != 6   # NOTE: here we provide input validation on length
+    len_flag = len(email) != 6 # NOTE: here we provide input validation on length
+    if len_flag:
         output = "Length check failed\n"
         output += "Email must be 6 characters long."
         logging.info(output)
