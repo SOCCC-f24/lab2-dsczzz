@@ -39,12 +39,12 @@ def encrypt(email="abc012"):
     for i in range(len(email_lst)):  # Loop through each character
         
     # TODO: complete line(s) below, convert EACH new element into a string
-    new_ascii = ord(email_lst[i]) + 3    # NOTE: here we extract and update element at 0 
-    email_lst[i] = chr(new_ascii)        # NOTE: here we convert our ASCII into string
+        new_ascii = ord(email_lst[i]) + 3    # NOTE: here we extract and update element at 0 
+        email_lst[i] = chr(new_ascii)        # NOTE: here we convert our ASCII into string
         
     # TODO: fix line below, convert list into a string
-    email_str = "dbc012"
-    email_str = "".join(emailp_lst)
+        email_str = "dbc012"
+        email_str = "".join(emailp_lst)
 
     # keep all updates in the retVal (str) variablei
     # i.e.,
@@ -90,9 +90,9 @@ def decrypt(email="def345"):
     # TODO: apply the encrypt pseudocode but shift down 3
     email_lst = list(email) #converting email string into list
     for i in range(len(email_lst)):  # Loop through each character
-    new_ascii = ord(email_lst[i]) - 3 #shifting letter 3 back
-    email_lst[i] = chr(new_ascii)
-    email_str = "".join(email_lst) #coverting our list back into a string
+        new_ascii = ord(email_lst[i]) - 3 #shifting letter 3 back
+        email_lst[i] = chr(new_ascii)
+        email_str = "".join(email_lst) #coverting our list back into a string
     # keep all updates in the retVal (str) variablei
     # i.e.,
     #    email_str = " some string updates here "
