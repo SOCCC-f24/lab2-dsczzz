@@ -16,7 +16,7 @@ def encrypt(email="abc012"):
     len_flag = len(email) != 6
     if len_flag:                         # NOTE: here we provide input validation on length
         output = "Length check failed\n"
-        output += "Email must be 6 characters long."
+        output = "Email must be 6 characters long."
         logging.info(output)
         return output        
    
@@ -29,7 +29,7 @@ def encrypt(email="abc012"):
     anum_flag = not (email[:3].isalpha() and email[3:].isdigit())
     if anum_flag:                        # NOTE: here we provide input validation on alpha/num
         output = "alpha num check failed\n"
-        output += "Email must have 3 letters followed by 3 digits."
+        output = "Email must have 3 letters followed by 3 digits."
         logging.info(output)
         return output     
         
