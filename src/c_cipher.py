@@ -1,7 +1,6 @@
 import logging
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 
-def encrypt(email="abc012"):
     """
     TODO: What is the objective? 
     To encrypt the email by shifting characters.
@@ -12,9 +11,10 @@ def encrypt(email="abc012"):
         TODO: what varibale and data types are being returned?   
     An error or encrypted email.
     """
+def encrypt(email="abc012"):
     output = "" 
-    len_flag = len(email) != 6
-    if len_flag:                         # NOTE: here we provide input validation on length
+    
+    if len(email) != 6   # NOTE: here we provide input validation on length
         output = "Length check failed\n"
         output = "Email must be 6 characters long."
         logging.info(output)
