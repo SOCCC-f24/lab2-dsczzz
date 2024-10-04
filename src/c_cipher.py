@@ -1,6 +1,7 @@
 import logging
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 
+def encrypt(email="abc012"):
     """
     TODO: What is the objective? 
     To encrypt the email by shifting characters.
@@ -11,12 +12,10 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
         TODO: what variable and data types are being returned?   
     An error or encrypted email.
     """
-def encrypt(email="abc012"):
     output = "" 
-    
     if len(email) != 6   # NOTE: here we provide input validation on length
         output = "Length check failed\n"
-        output = "Email must be 6 characters long."
+        output += "Email must be 6 characters long."
         logging.info(output)
         return output        
    
@@ -29,7 +28,7 @@ def encrypt(email="abc012"):
     anum_flag = not (email[:3].isalpha() and email[3:].isdigit())
     if anum_flag:                        # NOTE: here we provide input validation on alpha/num
         output = "alpha num check failed\n"
-        output = "Email must have 3 letters followed by 3 digits."
+        output += "Email must have 3 letters followed by 3 digits."
         logging.info(output)
         return output     
         
@@ -41,8 +40,8 @@ def encrypt(email="abc012"):
         email_lst[i] = chr(new_ascii)        # NOTE: here we convert our ASCII into string
         
     # TODO: fix line below, convert list into a string
-        email_str = "dbc012"
-        email_str = "".join(email_lst)
+    email_str = "dbc012"
+    email_str = "".join(email_lst)
 
     # keep all updates in the retVal (str) variablei
     # i.e.,
@@ -90,7 +89,8 @@ def decrypt(email="def345"):
     for i in range(len(email_lst)):  # Loop through each character
         new_ascii = ord(email_lst[i]) - 3 #shifting letter 3 back
         email_lst[i] = chr(new_ascii)
-        email_str = "".join(email_lst) #coverting our list back into a string
+    
+    email_str = "".join(email_lst) #coverting our list back into a string
     # keep all updates in the retVal (str) variablei
     # i.e.,
     #    email_str = " some string updates here "
