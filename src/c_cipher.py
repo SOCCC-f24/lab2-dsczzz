@@ -37,14 +37,12 @@ def encrypt(email="abc012"):
     email_lst = ["a", "b", "c", "0", "1", "2"]
     email_lst = list(email)
     for i in range(len(email_lst)):  # Loop through each character
-        
-    # TODO: complete line(s) below, convert EACH new element into a string
         new_ascii = ord(email_lst[i]) + 3    # NOTE: here we extract and update element at 0 
         email_lst[i] = chr(new_ascii)        # NOTE: here we convert our ASCII into string
         
     # TODO: fix line below, convert list into a string
         email_str = "dbc012"
-        email_str = "".join(emailp_lst)
+        email_str = "".join(email_lst)
 
     # keep all updates in the retVal (str) variablei
     # i.e.,
