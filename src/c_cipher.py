@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
         TODO: what arguments and data types are expected? (i.e., email)
     In order for the email to be encrypted it will be 6 characters long(3 letter + 3 digits).
     Returns:
-        TODO: what varibale and data types are being returned?   
+        TODO: what variable and data types are being returned?   
     An error or encrypted email.
     """
 def encrypt(email="abc012"):
