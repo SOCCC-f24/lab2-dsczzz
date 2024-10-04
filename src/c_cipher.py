@@ -34,8 +34,8 @@ def encrypt(email="abc012"):
         return output     
         
     # TODO: fix line below, process our string into a list
-   email_lst = ["a", "b", "c", "0", "1", "2"]
-   email_lst = list(email)
+    email_lst = ["a", "b", "c", "0", "1", "2"]
+    email_lst = list(email)
     
         
     # TODO: complete line(s) below, convert EACH new element into a string
